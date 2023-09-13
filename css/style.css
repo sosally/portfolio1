@@ -2,14 +2,42 @@
     width: 100%;
 }
 .container{
-    width: 1000px;
+    max-width: 1400px;
     height: inherit;
     background-color: rgba(255, 255, 255, .5);
     margin: auto;
 }
-header{
+/* header */
+header .container{
+  display: flex;
+    max-width: 1400px;
+
+}
+.logo{
+    background: url(../images/main_logo.svg) no-repeat 0 50%;
+    width: 124px;
     height: 100px;
-    background-color: lightcoral;
+    display: inline-block;
+}
+h1{
+    position: absolute;
+    text-indent: -99999px;
+}
+.gnb{
+    display: flex;
+    min-width: 830px;
+    height: 100px;
+    line-height: 100px;
+    justify-content: space-around;
+}
+.gnb li{
+   
+}
+.gnb li a{
+    font-size: 21px;
+}
+.spotmenu{
+    min-width: 220px;
 }
 main{
     height: 2300px;

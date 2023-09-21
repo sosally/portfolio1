@@ -3,10 +3,27 @@
 }
 .container{
     max-width: 1400px;
-    height: inherit;
-    background-color: rgba(255, 255, 255, .5);
+
     margin: auto;
 }
+/* popup */
+.popup {
+	position: fixed;
+	background-color: rgba(57, 167, 130, 0.7);
+	color: #fff;
+	font-size: 18px;
+	top: 30%;
+	left: 60%;
+	z-index: 999;
+	padding: 10px;
+}
+.popup #closeButton{
+	position: absolute;
+	right: 5%;
+	cursor: pointer;
+
+}
+
 /* header */
 
 header{
@@ -154,7 +171,7 @@ align-items: center;
 /* 캘린더 */
 .content2{
     
-    height: 300px;
+    height: 645px;
     background-color: #134aa9;
 }
 .content2 .container{
@@ -171,11 +188,57 @@ align-items: center;
     display: flex;
 }
 .space{
-    height: 300px;
-    background-color: rgb(241, 241, 151);
+
+
 }
 .space1{
     margin-top: 10%;
+    line-height: 54px;
+    
+}
+/* 공간소개 */
+.space2{
+    margin-top: 16px;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #2a2e35;
+    line-height: 16px;
+    font-weight: normal;
+}
+.find_left p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #2a2e35;
+    font-weight: normal;
+}
+.sns p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #2a2e35;
+    font-weight: normal;
+    line-height: 24px;
+}
+.space3_left ul{
+    display: flex;
+
+}
+.space3_left ul li button{
+    padding: 0 30px;
+    border: #134aa9 solid 2px;
+    border-radius: 50px;
+    height: 75px;
+    font-size: 20px;
+    color: #134aa9;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+.space3_left ul li button:hover{
+    color: #fff;
+    background-color: #134aa9;
+    transition: all 0.3s;
 }
 /* 공간찾기 */
 .find{
@@ -202,7 +265,47 @@ align-items: center;
     height: 300px;
     background-color: #eff4fe;
 }
+/* footer */
+.footer_first{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #484848;
+}
+.footer_first .footer1{
+    display: flex;
+    padding: 40px 0;
+    
+}
+.footer_first .footer1 a{
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer_first .footer1 li{
+    margin-right: 24px;
+}
 footer{
-    height: 100px;
-    background-color: lightslategray;
+    height: 276px;
+    background-color: #333;
+}
+.footer_second{
+    display: flex;
+    align-items: center;
+    height: 180px;
+}
+.footer_logo img{
+    width: 158px;
+    opacity: 0.5;
+}
+.footer_gunggido_logo img{
+    width: 74px;
+    opacity: 0.5;
+}
+.footer_second .address{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #767676;
+    line-height: 1.7;
+    padding-left: 40px;
 }

@@ -68,3 +68,38 @@ h3{
 a{
     text-decoration: none;
 }
+button{
+	outline: none;
+    background: none;
+	background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+	cursor: pointer;
+}
+
+/* skipMenu */
+a {
+	outline: none;
+}
+
+a:focus {
+	border: dotted red 2px;
+}
+
+.skip_menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #000;
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 24px;
+	text-decoration: none;
+	transform: translateY(-100%);
+	transition: 0.3s;
+}
+
+.skip_menu:focus {
+	transform: translateY(0%);
+}

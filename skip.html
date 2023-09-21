@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운용의 용이성(Operable) - 웹접근성</title>
+    <style>
+        a {
+            outline: none;
+        }
+
+        a:focus {
+            border: dotted red 2px;
+        }
+
+        .skip_menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: #000;
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 24px;
+            text-decoration: none;
+            transform: translateY(-100%);
+            transition: 0.3s;
+        }
+
+        .skip_menu:focus {
+            transform: translateY(0%);
+        }
+    </style>
+</head>
+
+<body>
+
+	<div class="skip_menus">
+        <a href="#main" class="skip_menu">main</a>
+        <a href="#content1" class="skip_menu">content1</a>
+        <a href="#content2" class="skip_menu">content2</a>
+        <a href="#content3" class="skip_menu">content3</a>
+    </div>
+
+
+    <main id="main">
+        <section id="content1">
+            <h2>content 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum, laudantium quae quam provident, sint possimus nesciunt veniam iure, facere qui unde ipsum a corrupti. Illum id repellendus obcaecati. Maiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum, laudantium quae quam provident, sint possimus nesciunt veniam iure, facere qui unde ipsum a corrupti. Illum id repellendus obcaecati. Maiores?</p>
+        </section>
+        <section id="content2">
+            <h2>content 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum, laudantium quae quam provident, sint possimus nesciunt veniam iure, facere qui unde ipsum a corrupti. Illum id repellendus obcaecati. Maiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum, laudantium quae quam provident, sint possimus nesciunt veniam iure, facere qui unde ipsum a corrupti. Illum id repellendus obcaecati. Maiores?</p>
+        </section>
+        <section id="content3">
+            <h2>content 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum, laudantium quae quam provident, sint possimus nesciunt veniam iure, facere qui unde ipsum a corrupti. Illum id repellendus obcaecati. Maiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum, laudantium quae quam provident, sint possimus nesciunt veniam iure, facere qui unde ipsum a corrupti. Illum id repellendus obcaecati. Maiores?</p>
+            <p> tabindex html에서 기본적으로 초점을 받는 태그 a,button,input,select,textarea </p>
+        </section>    
+    </main>
+
+</body>
+
+</html>

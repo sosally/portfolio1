@@ -14,6 +14,9 @@
     <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="./images/navercloud_favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- slide용 script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -22,6 +25,17 @@
 
 <body>
     <div class="wrap">
+         <!-- popup -->
+         <div class="popup">
+            <i class="fas fa-times-circle" id="closeButton"></i>
+            <br>
+            해당 사이트는 학습용으로 제작되었으며
+            <br>
+            네이버클라우드, 네이버와 무관합니다.
+            <br>
+            구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
+        </div>
+        <!-- //popup -->
         <div class="w100">
             <header>
                 <div class="sub_bg"></div>
@@ -139,26 +153,26 @@
                 </div>
                 <div class="space2">
                     <p>경기생활문화센터에서 운영하는 공간을 둘러보세요.</p>
-                    
+
                 </div>
                 <div class="space3">
                     <div class="space3_left">
                         <ul>
-                           <li>책 놀이터</li>
-                           <li>생활 수유실</li>
+                            <li><button type="button">책 놀이터</button></li>
+                            <li><button type="button">생활 수유실</button></li>
                         </ul>
                         <ul>
-                            <li>동네부엌</li>
-                            <li>생생 수유실</li>
-                            <li>마주침 공간1</li>
-                            <li>마주침 공간2</li>
-                         </ul>
-                         <ul>
-                            <li>한뼘전시</li>
-                            <li>무아지경</li>
-                            <li>생생살롱1</li>
-                            <li>생생살롱2</li>
-                         </ul>
+                            <li><button type="button">동네부엌</button></li>
+                            <li><button type="button">생생 수유실</button></li>
+                            <li><button type="button">마주침 공간1</button></li>
+                            <li><button type="button">마주침 공간2</button></li>
+                        </ul>
+                        <ul>
+                            <li><button type="button">한뼘전시</button></li>
+                            <li><button type="button">무아지경</button></li>
+                            <li><button type="button">생생살롱1</button></li>
+                            <li><button type="button">생생살롱2</button></li>
+                        </ul>
                     </div>
                     <div class="space3_right">
                         <img src="" alt="">
@@ -185,13 +199,14 @@
                     <h3>경기생활문화센터 SNS</h3>
                     <p>경기생활문화센터와 친구를 맺고
                         <br>
-                        다양한 소식을 만나보세요.</p>
+                        다양한 소식을 만나보세요.
+                    </p>
                     <div class="sns_bottom">
                         <div class="sns_more"></div>
                         <div class="sns_gallery"></div>
                     </div>
                 </div>
-              
+
             </div>
         </div>
         <div class="content6">
@@ -208,23 +223,42 @@
     <footer>
         <div class="container">
             <div class="footer_first">
-                <div class="footer1">
-                </div>
+                <ul class="footer1">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                </ul>
                 <div class="footer2">
+                    <ul class="sns">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="family_list">
+                        <li><a href="#">경기상상캠퍼스</a></li>
+                        <li><a href="#">경기문화재단</a></li>
+                    </ul>
+                    <button class="family_btn" type="button">패밀리 사이트</button>
+
                 </div>
             </div>
             <div class="footer_second">
-                <div class="footer_logo"></div>
-                <div class="address"></div>
+                <a class="footer_logo" href="#"><img src="./images/main_logo_gray.svg" alt="경기생활문화센터 흑백로고"></a>
+                <a class="footer_gunggido_logo" href="#"><img src="./images/gunggido_logo_gray.svg" alt="경기도 흑백로고"></a>
+                <div class="address"><p>경기문화재단 경기생활문화센터 (16614) 경기도 수원시 권선구 서둔로 166 생생1990 / 대표전화 031-296-0540<br>
+                    사업자번호 135-82-06932<br>
+                    COPYRIGHT©GGCF. ALL RIGHTS RESERVED.</p></div>
             </div>
         </div>
     </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="jquery.js"></script>
-    <script src="./fitvids.js"></script>
-
+    <script src="./js/jquery.js"></script>
+    <script src="./js/fitvids.js"></script>
+    <script src="./js/vanilla.js"></script>
 </body>
 
 </html>

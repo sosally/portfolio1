@@ -320,7 +320,7 @@ footer{
 .footer_second{
     display: flex;
     align-items: center;
-    height: 180px;
+    
 }
 .footer_logo img{
     width: 158px;

@@ -12,7 +12,7 @@
 $('.main_banner').bxSlider({
     // nextSelector : '.main_slide_btn .main_next_btn_inner',
     // prevSelector : '.main_slide_btn .main_prev_btn_inner',
-    mode : 'horizontal',
+    mode : 'fade',
     minSlides :1,
     maxSlides: 1,
     moveSlides:1,
@@ -23,4 +23,10 @@ $('.main_banner').bxSlider({
     pause : 5000
   });
   
+  //gnb
+  const depth1 = document.querySelectorAll('.gnb>li>a')
+  const depth2 = document.querySelectorAll('.sub li a');
   
+  depth1.addEventListener("mouseover", function(){
+    depth2.style.display = 'block';
+  })

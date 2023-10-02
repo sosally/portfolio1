@@ -108,7 +108,6 @@
                     <img src="./images/main_banner01.gif" alt="메인이미지1">
                 </div>
             </div>
-
         </div>
         <div class="quick_menu">
             <ul class="container">
@@ -118,7 +117,7 @@
                 <li><a href="#">온라인 문의<i class="fa-solid fa-arrow-right"></i></a></li>
             </ul>
         </div>
-        <div class="content2">
+        <!-- <div class="content2">
             <div class="container">
                 <h3>이달의 생활문화</h3>
                 <p>이달에 운영되는 다양한 생활문화을 만나보세요.</p>
@@ -144,7 +143,7 @@
                 <div class="search_icon"></div>
                 <p>공연정보가 없습니다.</p>
             </div>
-        </div>
+        </div> -->
         <div class="space">
             <div class="container">
                 <div class="space1">
@@ -160,24 +159,24 @@
                 <div class="space3">
                     <div class="space3_left">
                         <ul>
-                            <li><button type="button">책 놀이터</button></li>
-                            <li><button type="button">생활 수유실</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_01.png')">책 놀이터</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_02.png')">생활 수유실</button></li>
                         </ul>
                         <ul>
-                            <li><button type="button">동네부엌</button></li>
-                            <li><button type="button">생생 수유실</button></li>
-                            <li><button type="button">마주침 공간1</button></li>
-                            <li><button type="button">마주침 공간2</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_03.png')">동네부엌</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_04.png')">생생 수유실</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_05.png')">마주침 공간1</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_06.png')">마주침 공간2</button></li>
                         </ul>
                         <ul>
-                            <li><button type="button">한뼘전시</button></li>
-                            <li><button type="button">무아지경</button></li>
-                            <li><button type="button">생생살롱1</button></li>
-                            <li><button type="button">생생살롱2</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_11.png')">한뼘전시</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_12.png')">무아지경</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_13.png')">생생살롱1</button></li>
+                            <li><button type="button" onclick="changeImage('images/space_14.png')">생생살롱2</button></li>
                         </ul>
                     </div>
                     <div class="space3_right">
-                        <img src="./images/space_01.png" alt="책 놀이터">
+                        <img src="./images/space_01.png" alt="책 놀이터" id="space_image">
                     </div>
                 </div>
             </div>
@@ -222,20 +221,29 @@
 
                                 □ 모집대상 :생활문화 사업 기획자, 활동가, 실무자 총 20명(A코스, B코스 각 10명 ※선착순)
                         </p>
-                        <p>2023. 09. 27</p>
+                        <div class="plus">
+                            <p>2023. 09. 27</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
                     </a>
                     <a class="news2" href="#">
                         <p>공지</p>
                         <span>2023년 경기 생활문화 플랫폼 사업 공고</span>
                         <p class="notice">일상 속에서 누리는 생활문화 활동지원 2023년 경기 생활문화 플랫폼</p>
-                        <p>2023. 04. 26</p>
-                        </li>
-                        <a class="news3" href="#">
-                            <p>공지</p>
-                            <span>2023년 경기 생활문화 플랫폼 사업 공고</span>
-                            <p class="notice">일상 속에서 누리는 생활문화 활동지원 2023년 경기 생활문화 플랫폼</p>
+                        <div class="plus">
                             <p>2023. 04. 26</p>
-                        </a>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </a>
+                    <a class="news3" href="#">
+                        <p>공지</p>
+                        <span>2023년 경기 생활문화 플랫폼 사업 공고</span>
+                        <p class="notice">일상 속에서 누리는 생활문화 활동지원 2023년 경기 생활문화 플랫폼</p>
+                        <div class="plus">
+                            <p>2023. 04. 26</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -282,6 +290,7 @@
     <script src="./js/fitvids.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/vanilla.js"></script>
+    <script src="./js/bxslider.js"></script>
 </body>
 
 </html>

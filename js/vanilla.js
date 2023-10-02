@@ -24,9 +24,9 @@ $('.main_banner').bxSlider({
   });
   
   //gnb
-  const depth1 = document.querySelectorAll('.gnb>li>a')
-  const depth2 = document.querySelectorAll('.sub li a');
+  // const depth1 = document.querySelectorAll('.gnb')
+  // const depth2 = document.querySelectorAll('.sub li a');
   
-  depth1.addEventListener("mouseover", function(){
-    depth2.style.display = 'block';
-  })
+  // depth1.addEventListener("mouseover", function(){
+  //   depth2.style.display = 'block';
+  // })
